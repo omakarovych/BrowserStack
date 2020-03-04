@@ -1,10 +1,8 @@
 package com.browserstack.tests;
 
 import com.browserstack.BrowserstackMainPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -27,6 +25,90 @@ public class BrowserstackMainPageTest {
         BrowserstackMainPage browserstackMainPage = new BrowserstackMainPage(driver);
 
         browserstackMainPage.clickHeaderLogoButton();
+
+        browserstackMainPage.clickProductMenuButton();
+        browserstackMainPage.clickLiveMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickProductMenuButton();
+        browserstackMainPage.clickAutomateMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickProductMenuButton();
+        browserstackMainPage.clickAppLiveMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickProductMenuButton();
+        browserstackMainPage.clickAppAutomateMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickProductMenuButton();
+        browserstackMainPage.clickIntegrationMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickProductMenuButton();
+        browserstackMainPage.clickEnterpriseMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickProductMenuButton();
+        browserstackMainPage.clickScreenshotsMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickProductMenuButton();
+        browserstackMainPage.clickResponsiveMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickDevelopersMenuButton();
+        browserstackMainPage.clickDocumentationMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickDevelopersMenuButton();
+        browserstackMainPage.clickSupportMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickDevelopersMenuButton();
+        browserstackMainPage.clickStatusMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickDevelopersMenuButton();
+        browserstackMainPage.clickReleaseNotesMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickDevelopersMenuButton();
+        browserstackMainPage.clickOpenSourceMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickSolutionsMenuButton();
+        browserstackMainPage.clickFunctionalTestingMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickSolutionsMenuButton();
+        browserstackMainPage.clickRealUserConditionTestingMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickSolutionsMenuButton();
+        browserstackMainPage.clickRegressionTestingMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickSolutionsMenuButton();
+        browserstackMainPage.clickGeolocationTestingMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickSolutionsMenuButton();
+        browserstackMainPage.clickTestInLocalEnvironmentsMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickPricingMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickSignInMenuButton();
+        driver.navigate().back();
+
+        browserstackMainPage.clickFreeTrialMenuButton();
+        driver.navigate().back();
+
+        driver.close();
+
     }
 
     @Test
@@ -56,6 +138,7 @@ public class BrowserstackMainPageTest {
 
         browserstackMainPage.clickAppAutomateButton();
         driver.navigate().back();
+
         browserstackMainPage.checkCustomersGloballyTextSize("28px");
         browserstackMainPage.checkCustomersGloballyTextColor("rgba(51, 51, 51, 1)");
 
@@ -95,16 +178,7 @@ public class BrowserstackMainPageTest {
         browserstackMainPage.checkCopyrightTextSize("12px");
         browserstackMainPage.checkCopyrightTextColor("rgba(255, 255, 255, 1)");
 
-    }
-
-    @Test
-    public void browserStackFooterTest() {
-        driver.get("https://www.browserstack.com/");
-
-        BrowserstackMainPage browserstackMainPage = new BrowserstackMainPage(driver);
-
         driver.close();
     }
-
 
 }

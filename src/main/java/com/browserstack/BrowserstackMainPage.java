@@ -7,13 +7,82 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 
-
 public class BrowserstackMainPage {
+
     @FindBy(css = "a[title='BrowserStack'] > .w-svg")
     private WebElement headerLogoButton;
 
-    @FindBy(css = ".col-xs-5.dropdown-section.no-pad  a[title='Live'] > .dropdown-link-text")
-    private WebElement productsDropDownMenu;
+    @FindBy(css = "a#product-menu-toggle")
+    private WebElement productMenuButton;
+
+    @FindBy(css = ".col-xs-5.dropdown-section.no-pad  a[title='Live'] > .dropdown-link-heading")
+    private WebElement liveMenuButton;
+
+    @FindBy(css = ".col-xs-5.dropdown-section.no-pad  a[title='Automate'] > .dropdown-link-heading")
+    private WebElement automateMenuButton;
+
+    @FindBy(css = ".col-xs-7.dropdown-section  a[title='App Live'] > .dropdown-link-text")
+    private WebElement appLiveMenuButton;
+
+    @FindBy(css = ".col-xs-7.dropdown-section  a[title='App Automate'] > .dropdown-link-heading")
+    private WebElement appAutomateMenuButton;
+
+    @FindBy(css = "a[title='Integrations'] > strong")
+    private WebElement integrationMenuButton;
+
+    @FindBy(css = ".dropdown-section.tools  a[title='Enterprise']")
+    private WebElement enterpriseMenuButton;
+
+    @FindBy(css = ".dropdown-section.tools  a[title='Screenshots']")
+    private WebElement screenshotsMenuButton;
+
+    @FindBy(css = ".dropdown-section.tools  a[title='Responsive']")
+    private WebElement responsiveMenuButton;
+
+    @FindBy(css = "a#developers-menu-toggle > .nav_item_name")
+    private WebElement developersMenuButton;
+
+    @FindBy(css = "ul#developers-menu-dropdown  a[title='Documentation']")
+    private WebElement documentationMenuButton;
+
+    @FindBy(css = "ul#developers-menu-dropdown  a[title='Support']")
+    private WebElement supportMenuButton;
+
+    @FindBy(css = "ul#developers-menu-dropdown  a[title='Status']")
+    private WebElement statusMenuButton;
+
+    @FindBy(css = "a[title='Release notes']")
+    private WebElement releaseNotesMenuButton;
+
+    @FindBy(css = "ul#developers-menu-dropdown  a[title='Open Source']")
+    private WebElement openSourceMenuButton;
+
+    @FindBy(css = "a#solutions-menu-toggle > .nav_item_name")
+    private WebElement solutionsMenuButton;
+
+    @FindBy(css = "ul#solutions-menu-dropdown  a[title='Functional Testing']")
+    private WebElement functionalTestingMenuButton;
+
+    @FindBy(css = "ul#solutions-menu-dropdown  a[title='Real user condition testing']")
+    private WebElement realUserConditionTestingMenuButton;
+
+    @FindBy(css = "ul#solutions-menu-dropdown  a[title='Regression testing']")
+    private WebElement regressionTestingMenuButton;
+
+    @FindBy(css = "ul#solutions-menu-dropdown  a[title='Geolocation testing']")
+    private WebElement geolocationTestingMenuButton;
+
+    @FindBy(css = "ul#solutions-menu-dropdown  a[title='Geolocation testing']")
+    private WebElement testInLocalEnvironmentsMenuButton;
+
+    @FindBy(css = "nav#product-nav a[title='Pricing']")
+    private WebElement pricingMenuButton;
+
+    @FindBy(css = "a[title='Sign In']")
+    private WebElement signInMenuButton;
+
+    @FindBy(css = "a[title='Free Trial']")
+    private WebElement freeTrialMenuButton;
 
     @FindBy(tagName = "h1")
     private WebElement topBenefits;
@@ -23,7 +92,6 @@ public class BrowserstackMainPage {
 
     @FindBy(id = "signupModalButton")
     private WebElement signUpButton;
-
 
     @FindBy(xpath = "/html//body[@id='home-page']/div[@class='wrapper']/main[@role='main']/section/article/div/div/div[@class='vc_column-inner']//article[@class='hero-unit hero-unit--v2']//a[@title='Live']")
     private WebElement liveButton;
@@ -36,7 +104,6 @@ public class BrowserstackMainPage {
 
     @FindBy(xpath = "/html//body[@id='home-page']/div[@class='wrapper']/main[@role='main']/section/article/div/div/div[@class='vc_column-inner']//article[@class='hero-unit hero-unit--v2']//a[@title='App Automate']")
     private WebElement appAutomateButton;
-
 
     @FindBy(css = "h3")
     private WebElement customersGlobally;
@@ -84,6 +151,102 @@ public class BrowserstackMainPage {
 
     public void clickHeaderLogoButton() {
         headerLogoButton.click();
+    }
+
+    public void clickProductMenuButton() {
+        productMenuButton.click();
+    }
+
+    public void clickLiveMenuButton() {
+        liveMenuButton.click();
+    }
+
+    public void clickAutomateMenuButton() {
+        automateMenuButton.click();
+    }
+
+    public void clickAppLiveMenuButton() {
+        appLiveMenuButton.click();
+    }
+
+    public void clickAppAutomateMenuButton() {
+        appAutomateMenuButton.click();
+    }
+
+    public void clickIntegrationMenuButton() {
+        integrationMenuButton.click();
+    }
+
+    public void clickEnterpriseMenuButton() {
+        enterpriseMenuButton.click();
+    }
+
+    public void clickScreenshotsMenuButton() {
+        screenshotsMenuButton.click();
+    }
+
+    public void clickResponsiveMenuButton() {
+        responsiveMenuButton.click();
+    }
+
+    public void clickDevelopersMenuButton() {
+        developersMenuButton.click();
+    }
+
+    public void clickDocumentationMenuButton() {
+        documentationMenuButton.click();
+    }
+
+    public void clickSupportMenuButton() {
+        supportMenuButton.click();
+    }
+
+    public void clickStatusMenuButton() {
+        statusMenuButton.click();
+    }
+
+    public void clickReleaseNotesMenuButton() {
+        releaseNotesMenuButton.click();
+    }
+
+    public void clickOpenSourceMenuButton() {
+        openSourceMenuButton.click();
+    }
+
+    public void clickSolutionsMenuButton() {
+        solutionsMenuButton.click();
+    }
+
+    public void clickFunctionalTestingMenuButton() {
+        functionalTestingMenuButton.click();
+    }
+
+    public void clickRealUserConditionTestingMenuButton() {
+        realUserConditionTestingMenuButton.click();
+    }
+
+    public void clickRegressionTestingMenuButton() {
+        regressionTestingMenuButton.click();
+    }
+
+    public void clickGeolocationTestingMenuButton() {
+        geolocationTestingMenuButton.click();
+    }
+
+    public void clickTestInLocalEnvironmentsMenuButton() {
+        testInLocalEnvironmentsMenuButton.click();
+    }
+
+    public void clickPricingMenuButton() {
+        pricingMenuButton.click();
+    }
+
+    public void clickSignInMenuButton() {
+        signInMenuButton.click();
+    }
+
+    public void clickFreeTrialMenuButton() {
+        freeTrialMenuButton.click();
     }
 
     public void checkTopBenefitsTextSize(String value) {
@@ -201,6 +364,4 @@ public class BrowserstackMainPage {
     public void checkCopyrightTextColor(String value) {
         Assert.assertEquals(copyrightText.getCssValue("color"), value);
     }
-
-
 }
